@@ -1,0 +1,19 @@
+npm init -y 
+npm i -D tailwindcss
+npx i tailwindcss init  => this is making config file 
+
+- add tailwing config file to work with it 
+- then make the src dir and make file input.css 
+ contain the folloeing 
+ @tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+then edit the json script object for the development perpose 
+
+"scripts": {
+    "build": " tailwind -i ./input.css -o ./css/main.css",
+    "watch": " tailwind -i ./input.css -o ./css/main.css --watch"
+  },
+
+this take your taiwlind class and then conver it into css file 
